@@ -2,24 +2,33 @@ import React from "react";
 import { useState } from "react";
 
 function Main() {
-  const []=useState();
-    function handleSubmit(e) {
-      // e is for event
-      // e.preventDefault stops the form for refresh
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        const newIngridient = formData.get("ingridients");
-        console.log(newIngridient);
-        
-        
+  const [ingredients, setIngredients] = useState([]); 
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    
+
+    const newIngredient = formData.get("indgridients"); 
+
+    if (newIngredient && newIngredient.trim() !== "") {
+      setIngredients(prevIngredients => [...prevIngredients, newIngredient]);
+      e.currentTarget.reset();
     }
+  }
+
   return (
     <main>
-      <form onSubmit={handleSubmit} action="" className="add-form">
-        {/* <label htmlFor="#">Add Ingridients</label> */}
-        <input type="text" placeholder="e.g Capuchino " name="indgridients" />
-        <button>Add Ingridients</button>
+      <form onSubmit={handleSubmit} className="add-form">
+        <input type="text" placeholder="e.g Capuchino" name="indgridients" />
+        <button type="submit">Add Ingredient</button>
       </form>
+
+      <ul className="list-item">
+        {ingredients.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </main>
   );
 }
