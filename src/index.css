@@ -106,11 +106,14 @@ main {
     margin-bottom: 8px;
     padding: 12px 16px;
     border-radius: 6px;
-    color: #374151;
+    background-color: #b8b5d8;
+    color: #0b75d8;
     display: flex;
     align-items: center;
     animation: fadeIn 0.3s ease;
 }
+
+
 
 /* Animation for adding new items */
 @keyframes fadeIn {
