@@ -35,11 +35,10 @@ function Main() {
 
       <section>
         <h2>Ingredient List</h2>
-        <hr />
         {ingredients.length === 0 ? (
           <p>No ingredients added yet</p>
         ) : (
-          <ul className="list-item">{ingredientListItems}</ul>
+          <ul className="list-item">{ingredientListItems} </ul>
         )}
       </section>
 
