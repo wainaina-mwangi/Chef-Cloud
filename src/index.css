@@ -75,7 +75,7 @@ main {
 
 /* Button Styling */
 .add-form button {
-    background-color: #4f46e5;
+    background-color: #ff6b6b;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -87,7 +87,7 @@ main {
 }
 
 .add-form button:hover {
-    background-color: #4338ca;
+    background-color: #dd2323;
 }
 
 .add-form button:active {
@@ -102,15 +102,39 @@ main {
 }
 
 .list-item li {
-    background-color: #f9fafb;
     margin-bottom: 8px;
     padding: 12px 16px;
     border-radius: 6px;
-    background-color: #b8b5d8;
-    color: #f70b03;
+    color: #787b7c;
     display: flex;
     align-items: center;
     animation: fadeIn 0.3s ease;
+}
+
+.get-btn{
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap; 
+    width:fit-content ;
+    height: fit-content;
+
+}
+
+.get-recipe-container{
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.heading{
+    color: #787b7c;
 }
 
 

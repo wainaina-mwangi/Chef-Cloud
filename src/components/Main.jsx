@@ -35,6 +35,7 @@ function Main() {
 
       <section>
         <h2>Ingredient List</h2>
+        <hr />
         {ingredients.length === 0 ? (
           <p>No ingredients added yet</p>
         ) : (
@@ -46,9 +47,9 @@ function Main() {
         <div className="get-recipe-container">
           <div>
             <h3>Ready for a recipe?</h3>
-            <p>Generate a recipe from your list of ingredients.</p>
+            <p className="heading">Generate a recipe from your list of ingredients.</p>
           </div>
-          <button>
+          <button className="get-btn">
             Get Recipe
           </button>
         </div>
