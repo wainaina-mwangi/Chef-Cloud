@@ -87,7 +87,8 @@ main {
 }
 
 .add-form button:hover {
-    background-color: #dd2323;
+    background-color:  #ff6b6b;
+;
 }
 
 .add-form button:active {
