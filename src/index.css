@@ -128,14 +128,99 @@ main {
 
 }
 
-.get-recipe-container{
-    display: flex;
-    margin-top: 50px;
-}
+
 
 
 .heading{
     color: #787b7c;
+}
+
+/* Container for the whole recipe card */
+.recipe-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+.recipe-card h1 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.description {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 2rem 0;
+}
+
+/* Section Headings */
+h2 {
+    color: #e67e22;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #fcf3cf;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 1rem;
+}
+
+/* List Styling */
+.ingredients ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.ingredients li::before {
+    content: "•";
+    color: #e67e22;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.instructions ol {
+    padding-left: 1.2rem;
+}
+
+.instructions li {
+    margin-bottom: 12px;
+    padding-left: 8px;
+}
+
+.recipe-card button {
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 
